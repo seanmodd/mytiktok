@@ -1,30 +1,29 @@
-import React from "react";
+import React from 'react';
 
 // Components
-import { Link, Icon } from "@chakra-ui/react";
+import { Link, Icon } from '@chakra-ui/react';
 import {
   AiFillInstagram as Instagram,
   AiFillGithub as GitHub,
   AiFillLinkedin as LinkedIn,
   AiOutlineTwitter as Twitter,
-} from "react-icons/ai";
-import { FaSpotify as Spotify } from "react-icons/fa";
+} from 'react-icons/ai';
+import { FaSpotify as Spotify } from 'react-icons/fa';
 
 const SocialMedia = ({ channel }) => {
   const renderIcon = (variant) => {
     switch (variant) {
-      case "instagram":
+      case 'instagram':
         return Instagram;
-      case "github":
+      case 'github':
         return GitHub;
-      case "linkedin":
+      case 'linkedin':
         return LinkedIn;
-      case "twitter":
+      case 'twitter':
         return Twitter;
-      case "spotify":
+      case 'spotify':
         return Spotify;
       default:
-        return;
     }
   };
 
